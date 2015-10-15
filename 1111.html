@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="ul/jquery-1.11.3.min.js"></script>
+    <title></title>
+</head>
+<body>
+    <button id="qwer">asdf</button>
+    <script>
+
+    function changeBodyBGColor() {
+        var red = Math.floor(Math.random() * 255);
+        var green = Math.floor(Math.random() * 255);
+        var blue = Math.floor(Math.random() * 255);
+
+        //console.log(red, green, blue);
+
+        $('body').css("background-color", "rgb("+red+","+green+","+blue+")");
+    }
+
+    $("#qwer").click(function() {
+        // дохуя кода, который будет выполняться по каждому клику по кнопке
+
+        changeBodyBGColor();
+    });
+
+
+
+    setInterval(function() {
+        //console.log("asdf");
+        //changeBodyBGColor();
+    }, 50);
+
+
+
+    </script>
+</body>
+</html>
