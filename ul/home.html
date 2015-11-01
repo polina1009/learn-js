@@ -1,40 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-    <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="jquery.scrollablecombo.js"></script>
-   
-</head>
-<body>
-<h1>Home</h1>
-<ul>
-    <li>home</li>
-    <li>about</li>
-    <li>contscts</li>
-    <li>
-        catalog
-        <ul>
-            <li>
-                Skates
-                <ul>
-                    <li>Skate 1</li>
-                    <li>Skate 2</li>
-                    <li>Skate 3</li>
-                </ul>
-            </li>
-            <li>
-                Bikes
-                <ul>
-                    <li>Bike 1</li>
-                    <li>Bike 2</li>
-                    <li>Bike 3</li>
-                    <li>Bike 4</li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-</ul>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+        <!--<script type="text/javascript" src="jquery.scrollablecombo.js"></script>-->
+
+        <script src="jquery.secretnav-master/dist/js/jquery.secretnav.js"></script>
+        <link rel="stylesheet" type="text/css" href="jquery.secretnav-master/dist/css/jquery.secretnav.css">
+
+        <script>
+            $(document).ready(function() {
+                //console.log("Документ полностью отрисован");
+                //console.log($('#my_menu'));
+
+
+
+                $( '#container' ).SecretNav({
+                    navSelector: 'nav',         // selector of the nav tag
+                    openSelector: '.open-menu', // selector of the menu's opener
+                    position: 'left'            // left | top
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Home</h1>
+
+        <div id="container">
+            asdf
+            <a class="open-menu">
+                +++
+            </a>
+        </div>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 1</a>
+            <a href="#">Link n</a>
+        </nav>
+
+
+        <!--<ul id="my_menu">-->
+            <!--<li>home</li>-->
+            <!--<li>about</li>-->
+            <!--<li>contscts</li>-->
+            <!--<li>-->
+                <!--catalog-->
+                <!--<ul>-->
+                    <!--<li>-->
+                        <!--Skates-->
+                        <!--<ul>-->
+                            <!--<li>Skate 1</li>-->
+                            <!--<li>Skate 2</li>-->
+                            <!--<li>Skate 3</li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--Bikes-->
+                        <!--<ul>-->
+                            <!--<li>Bike 1</li>-->
+                            <!--<li>Bike 2</li>-->
+                            <!--<li>Bike 3</li>-->
+                            <!--<li>Bike 4</li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</li>-->
+        <!--</ul>-->
+    </body>
 </html>

@@ -1,0 +1,43 @@
+body {
+    font: 10pt Arial, Helvetica, sans-serif;
+    background: #e1dfb9;
+}
+
+h1 {
+    font-size: 1.1em;
+    color: #800040;
+    margin-top: 0;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    background: #f0f0f0;
+}
+
+#header {
+    text-align: center;
+    padding: 5px;
+    background: #8fa09b;
+    color: #ffe;
+}
+
+#sidebar {
+    margin-top: 10px;
+    width: 110px;
+    padding: 0 10px;
+    float: left;
+}
+
+#content {
+    margin-left: 130px;
+    padding: 10px;
+    background: #fff;
+}
+
+#footer {
+    background: #8fa09b;
+    color: #fff;
+    padding: 5px;
+    clear: left;
+}

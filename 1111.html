@@ -3,37 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <script src="ul/jquery-1.11.3.min.js"></script>
+
+    <!--<script src="ul/jquery.secretnav-master/dist/js/jquery.secretnav.js"></script>-->
+    <!--<link href="ul/jquery.secretnav-master/dist/css/jquery.secretnav.css">-->
+
+
     <title></title>
 </head>
 <body>
     <button id="qwer">asdf</button>
     <script>
+        function changeBodyBGColor() {
+            var red = Math.floor(Math.random() * 255);
+            var green = Math.floor(Math.random() * 255);
+            var blue = Math.floor(Math.random() * 255);
 
-    function changeBodyBGColor() {
-        var red = Math.floor(Math.random() * 255);
-        var green = Math.floor(Math.random() * 255);
-        var blue = Math.floor(Math.random() * 255);
+            //console.log(red, green, blue);
 
-        //console.log(red, green, blue);
+            $('body').css("background-color", "rgb("+red+","+green+","+blue+")");
+        }
 
-        $('body').css("background-color", "rgb("+red+","+green+","+blue+")");
-    }
+        $("#qwer").click(function() {
+            // дохуя кода, который будет выполняться по каждому клику по кнопке
 
-    $("#qwer").click(function() {
-        // дохуя кода, который будет выполняться по каждому клику по кнопке
-
-        changeBodyBGColor();
-    });
-
-
-
-    setInterval(function() {
-        //console.log("asdf");
-        //changeBodyBGColor();
-    }, 50);
+            changeBodyBGColor();
+        });
 
 
 
+        setInterval(function() {
+            //console.log("asdf");
+            //changeBodyBGColor();
+        }, 50);
     </script>
 </body>
 </html>
