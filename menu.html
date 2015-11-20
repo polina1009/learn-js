@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            #menu_1,
+            #submenu_1,
+            #subsubmenu_1 {
+                list-style: none;
+            }
+
+            #submenu_1, #subsubmenu_1 {
+                /*display: none;*/
+            }
+
+            /* show on hover begin */
+            #menu_1-3:hover > ul,
+            #submenu_1-3:hover > ul {
+                display: block;
+            }
+            /* show on hover end */
+
+            #menu_1 > li {
+                display: inline-block;
+
+            }
+
+            li {
+                border: 5px solid white;
+                border-radius: 8px;
+                background: greenyellow;
+                min-width: 100px;
+                min-height: 30px;
+                font-size: 32px;
+                text-align: center;
+                text-transform: uppercase;
+                margin: 10px;
+            }
+
+            #submenu_1 {
+                position: absolute;
+                margin-left: -50px;
+            }
+
+            #submenu_1 > li {
+                border: 1px solid gold;
+            }
+
+            #subsubmenu_1 {
+                position: absolute;
+                margin-left: 74px;
+                margin-top: -48px;
+            }
+
+            #subsubmenu_1 > li {
+                display: inline-block;
+                border: 1px solid green;
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="menu_1">
+            <li id="menu_1-1">asdf</li>
+            <li id="menu_1-2">asdf</li>
+            <li id="menu_1-3">
+                asdf
+                <ul id="submenu_1">
+                    <li id="submenu_1-1">qwer</li>
+                    <li id="submenu_1-2">qwer</li>
+                    <li id="submenu_1-3">
+                        qwer
+                        <ul id="subsubmenu_1">
+                            <li>ttt</li>
+                            <li>ttt</li>
+                            <li>ttt</li>
+                            <li>ttt</li>
+                            <li>ttt</li>
+                        </ul>
+                    </li>
+                    <li id="submenu_1-4">qwer</li>
+                    <li id="submenu_1-5">qwer</li>
+                </ul>
+            </li>
+            <li id="menu_1-4">asdf</li>
+            <li id="menu_1-5">asdf</li>
+        </ul>
+    </body>
+</html>

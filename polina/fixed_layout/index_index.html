@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            /*nav * {*/
+                /*outline: 1px solid red;*/
+            /*}*/
+
+            body {
+                max-width: 700px;
+                background: url(http://wpapers.ru/wallpapers/animals/Pandas/6392/1920x1080_%D0%9F%D0%B0%D0%BD%D0%B4%D0%B0-%D0%BD%D0%B0-%D1%87%D0%B5%D1%80%D0%BD%D0%BE%D0%BC-%D1%84%D0%BE%D0%BD%D0%B5.jpg);
+                /*background-size: 100% 100%;*/
+                background-repeat: repeat-y;
+            }
+
+            /*#wrapper {*/
+                /*background: url(http://www.wallpage.ru/imgbig/wallpapers_70121.jpg);*/
+                /*background-size: 100% 100%;*/
+                /*background-repeat: no-repeat;*/
+            /*}*/
+
+            header {
+                position: fixed;
+                width: 1852px;
+                height: 90px;
+                left: 5px;
+                right: 5px;
+                background: gray;
+                border: 3px solid gray;
+                border-radius: 20px;
+                text-align: center;
+                color: white;
+                opacity: 0.6;
+            }
+
+             nav {
+                 position: relative;
+                 width: 1845px;
+                 height: 50px;
+                 left: 0;
+                 right: 0;
+                 background: gray;
+                 border: 3px solid gray;
+                 border-radius: 10px;
+                 top: 110px;
+                 padding: 0;
+                 margin: 0;
+                 opacity: 0.6;
+             }
+
+             nav ul {
+                 list-style-type: none;
+             }
+
+             #about {
+                 background: gray;
+                 border: 1px solid gray;
+                 border-radius: 15px;
+                 text-align: center;
+                 font-size: large;
+                 color: white;
+             }
+
+             #catalog {
+                 background: gray;
+                 border: 1px solid gray;
+                 border-radius: 15px;
+                 text-align: center;
+                 font-size: large;
+                 color: white;
+             }
+
+             #information {
+                 background: gray;
+                 border: 1px solid gray;
+                 border-radius: 15px;
+                 text-align: center;
+                 font-size: large;
+                 color: white;
+             }
+
+            .horizontal_menu > li {
+                float: left;
+                width: 590px;
+            }
+
+            nav li:hover #li{
+                position: relative;
+                display: block;
+            }
+
+            #li {
+                display: none;
+                list-style-type: none;
+            }
+
+            .woman {
+                display: none;
+                list-style-type: none;
+                margin: -36px;
+                position: relative;
+                left: 583px;
+                right: 510px;
+                width: 600px;
+                height: 300px;
+                /*border: 1px solid red;*/
+            }
+
+            .catalog {
+                position: absolute;
+                /*background: lawngreen;*/
+                left: 605px;
+                right: 510px;
+                text-align: left;
+                font-size: large;
+                color: white;
+                /*border: 1px solid green;*/
+                /*border-radius: 15px;*/
+            }
+
+            .catalog li{
+                width: 543px;
+                background: gainsboro;
+                border: 1px solid black;
+                border-radius: 10px;
+                text-align: center;
+                height: 33px;
+                text-transform: uppercase;
+                margin: 14px;
+            }
+
+            .submenu:hover .woman{
+                position: absolute;
+                display: block;
+            }
+
+            .woman {
+                position: relative;
+                /*background: lawngreen;*/
+                /*left: 535px;*/
+                right: 510px;
+                /*text-align: left;*/
+                /*font-size: large;*/
+                /*color: white;*/
+            }
+
+            a {
+                text-decoration: none;
+                text-align: left;
+                font-size: large;
+                color: white;
+            }
+
+            #about:hover {
+                background: black;
+            }
+
+            #catalog:hover {
+                background: black;
+            }
+
+            #information:hover {
+                background: black;
+            }
+
+            .man:hover {
+                background: black;
+                border: 1px solid white;
+            }
+
+            .submenu:hover {
+                background: black;
+                border: 1px solid white;
+            }
+
+            .child:hover {
+                background: black;
+                border: 1px solid white;
+            }
+
+            .blonde:hover{
+                background: black;
+                border: 1px solid white;
+            }
+
+            .brunette:hover {
+                background: black;
+                border: 1px solid white;
+            }
+
+            .redhead:hover {
+                background: black;
+                border: 1px solid white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header><h1>Opinion poll</h1></header>
+            <nav>
+                <ul class="horizontal_menu">
+                    <li id="about"><a href="About.html">About</a></li>
+                    <li id="catalog">
+                        <a href="catalog.html">Catalog</a>
+                        <div class="catalog">
+                            <ul class="vertical_menu" id="li">
+                                <li class="man"><a href="man.html">Man</a></li>
+                                <li class="submenu">
+                                    <a href="woman.html">Woman</a>
+                                    <div class="woman">
+                                        <ul>
+                                            <li class="blonde"><a href="blonde.html">Blonde</a></li>
+                                            <li class="brunette"><a href="Brunette.html">Brunette</a></li>
+                                            <li class="redhead"><a href="Redhead.html">Redhead</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="child"><a href="child.html">Child</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="information"><a href="information.html">Information</a></li>
+                </ul>
+            </nav>
+            <article></article>
+            <footer></footer>
+        </div>
+    </body>
+</html>
