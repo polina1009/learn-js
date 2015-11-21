@@ -2,26 +2,49 @@ header {
     position: absolute;
     top: 0;
     left: 400px;
-    right: 400px;
+    right: 505px;
     height: 80px;
     background: gray;
     display: block;
 }
 
 nav {
-    position: absolute;
-    top: 80px;
-    left: 400px;
-    right: 400px;
-    height: 50px;
-    background: dodgerblue;
+    position: relative;
+    top: 72px;
+    left: 392px;
+    right: 505px;
+    height: 18px;
+    width: 958px;
+    /*background: dodgerblue;*/
+    border: 1px solid red;
     display: block;
 }
 
 nav ul {
     list-style-type: none;
+    display: inline-block;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
+}
+
+.img {
+    width: 960px;
+    height: 169px;
+    border: 1px solid red;
+}
+
+.nav {
+    float: left;
+    background: gray;
+    width: 100px;
+    height: 60px;
+}
+
+.nav2 {
+    float: right;
+    background: gainsboro;
+    width: 100px;
+    height: 60px;
 }
